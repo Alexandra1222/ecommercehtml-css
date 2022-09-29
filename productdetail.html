@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="productdetail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img   src="images/logo.png" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Productos</a></li>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="account.html">Cuenta</a></li>
+            </ul>
+        </nav>
+        <img src="images/cart.png" width="30px" height="30px">
+        <img src="images/menu.png" class="menu-icon" alt="" onclick="menutoggle()">
+    </div>
+</div>
+<!-- -----------detalle de producto---------------------------- -->
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/product-1.jpg" width="100%" id="ProductImg">
+                    
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="images/gallery-1.jpg" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/gallery-2.jpg" alt="" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/gallery-3.jpg" alt="" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/gallery-4.jpg" alt="" class="small-img">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-2">
+                    <p>Home/T-shirt</p>
+                    <h1>remera roja by HRX</h1>
+                    <h4>$1.220</h4>
+                    <select name="" id="">
+                        <option value="">Selecciones talle</option>
+                        <option value="">XXL</option>
+                        <option value="">XL</option>
+                        <option value="">Medio</option>
+                        <option value="">pequeño</option>
+                    </select>
+                    <input type="number" value="1">
+                    <a href="" class="btn">Añadir al carrito</a>
+                    <h3>Detalle de Productos</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- titulo -->
+        <div>
+            <div class="small-container">
+                <h2>productos relacionados</h2>
+                <p>ver mas</p>
+                
+            </div>
+        </div>
+<!-- -----------producto---------------------------- -->
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-1.jpg" alt="">
+                <h4>Remera Roja Impresa</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-light fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-2.jpg" alt="">
+                <h4>Remera Roja Impresa</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-light fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-3.jpg" alt="">
+                <h4>Remera Roja Impresa</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-light fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                     <h3>Descarga nuestra aplicación para Android y ios</h3>
+                     <div class="app-logo">
+                         <img src="images/app-store.png" alt="">
+                         <img src="images/play-store.png" alt="">
+                     </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/logo-white.png" alt="">
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Links</h3>
+                        <ul>
+                            <li>coupons</li>
+                            <li>blog personal</li>
+                            <li>return policy</li>
+                            <li>join afilliate</li>
+                        </ul>
+
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>redes sociales </h3>
+                        <ul>
+                            <li>instagram</li>
+                            <li>facebook</li>
+                            <li>twiter</li>
+                            <li>youtube</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- js para el toglemenu -->
+    <script>
+        let MenuItems=document.getElementById("MenuItems");
+        MenuItems.style.maxHeight="0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight=="0px"){
+                MenuItems.style.maxHeight="200px";
+            }
+            else{
+                MenuItems.style.maxHeight="0px";
+            }
+        }
+    </script>
+
+    <!-- js para las imagenes miniaturas -->
+    <script>
+        let ProductImg= document.getElementById("ProductImg");
+        let smallImg=document.getElementsByClassName("small-img");
+        smallImg[0].onclick=function(){
+            ProductImg.src=smallImg[0].src;
+        }
+        smallImg[1].onclick=function(){
+            ProductImg.src=smallImg[1].src;
+        }
+        smallImg[2].onclick=function(){
+            ProductImg.src=smallImg[2].src;
+        }
+        smallImg[3].onclick=function(){
+            ProductImg.src=smallImg[3].src;
+        }
+    </script>
+</body>
+</html>
